@@ -1,0 +1,10 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno
+.env
+
+# Archivos de build o logs (opcional, pero recomendado)
+dist/
+build/
+*.log
