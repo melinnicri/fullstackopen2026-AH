@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "cross-env NODE_ENV=production npm start --prefix server"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "prettier": "3.9.4"
+  }
+}
