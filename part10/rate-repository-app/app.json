@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "rate-repository-app",
+    "slug": "rate-repository-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.melinnicri.raterepositoryapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fb418ec8-cb08-4f0a-9502-0de99f8ed195"
+      },
+      "apolloUri": "http://192.168.100.17:4000/graphql"
+    },
+    "owner": "melinnicris-team",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/fb418ec8-cb08-4f0a-9502-0de99f8ed195"
+    },
+    "plugins": [
+      "expo-asset"
+    ]
+  }
+}
