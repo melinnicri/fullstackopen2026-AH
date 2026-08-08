@@ -4,10 +4,10 @@
   "description": "- To get the app running just install its dependencies with ```npm install``` and run it with ```npm run dev```.\r   - The app should work without a backend, but make sure that the request made to ```/api/ping``` made on startup is successful before continuing.",
   "main": "eslint.config.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only --project tsconfig.json src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
+  "dev": "ts-node-dev --respawn --transpile-only --project tsconfig.json src/index.ts",
+  "build": "tsc",
+  "start": "node build/index.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
