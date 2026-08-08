@@ -8,9 +8,9 @@ primary_region = "gru"
   internal_port = 3000
   min_machines_running = 0
   processes = [ "app" ]
-
+  
 [build]
-  builder = "heroku/buildpacks:20"
+  dockerfile = "Dockerfile"
 
 [[vm]]
   cpu_kind = "shared"
