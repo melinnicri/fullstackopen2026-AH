@@ -5,8 +5,8 @@ Aplicación Full-Stack desarrollada para el curso Full Stack Open, migrada e int
 
 ## 🔗 Enlaces de Interés
 
-* **Aplicación desplegada:** [Ver Patientor en producción](AQUÍ_PEGAS_EL_LINK_DE_RENDER_O_FLY)
-* **Repositorio del proyecto:** [Ver código fuente en GitHub](AQUÍ_PEGAS_EL_LINK_DE_TU_REPOSITORIO)
+* **Aplicación desplegada en Render y Vercel, Fly se hizo pelotas con Vercel:** [Ver Patientor en producción](https://app-patientor-2026-ah.vercel.app/))
+* **Repositorio del proyecto:** [Ver código fuente en GitHub](https://github.com/melinnicri/fullstackopen2026-AH/tree/main/part11/Patientor))
 
 ## 🚀 Tecnologías utilizadas
 * **Frontend:** React, TypeScript, Vite, Material-UI, React Router.
