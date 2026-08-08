@@ -37,16 +37,15 @@ jobs:
   deploy:
     needs: [build_and_test]
     runs-on: ubuntu-latest
-    # El despliegue solo ocurre si pasa el build/test y es un PUSH directo o un merge a main
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Trigger Deployment
-        run: |
-          echo "Desplegando la aplicación a producción..."
-          # Aquí puedes poner el comando de despliegue de tu proveedor (Render Webhook, Fly CLI, etc.)
-          # Ejemplo con un Webhook de Render:
-          # curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
-          echo "¡Despliegue simulado/configurado con éxito!"
+      - name: Setup Flyctl
+        uses: superfly/flyctl-actions/setup-flyctl@master
+
+      - name: Deploy to Fly.io
+        run: flyctl deploy --app app-patientor-2026 --remote-only
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
