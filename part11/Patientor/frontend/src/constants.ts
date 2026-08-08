@@ -1,1 +1,1 @@
-export const apiBaseUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001/api';
+export const apiBaseUrl = 'https://patientor-backend-722i.onrender.com/api';
